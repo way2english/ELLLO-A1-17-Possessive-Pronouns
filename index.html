@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A1-20 — Adverbs of Frequency | Way2English</title>
+<title>A1-17 — Possessive Pronouns | Way2English</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -125,9 +125,9 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
 <body>
 
 <div class="hero">
-  <div class="hero-badge">Way2English · A1 · Lesson 20</div>
-  <h1>Adverbs of Frequency</h1>
-  <p>Навчися говорити про те, як часто ти щось робиш: вихідні, вечерю, дорогу на роботу та фільми.</p>
+  <div class="hero-badge">Way2English · A1 · Lesson 17</div>
+  <h1>Possessive Pronouns</h1>
+  <p>Навчись говорити про власність: мій, твій, його, їхній — і скажи, кому що належить!</p>
 </div>
 
 <div class="stepper-wrap"><div class="stepper" id="stepper"></div></div>
@@ -164,226 +164,231 @@ const STEPS=[
 ];
 
 const VOCAB=[
-  {en:'go out', ua:'виходити кудись'},
-  {en:'beach', ua:'пляж'},
-  {en:'lake', ua:'озеро'},
-  {en:'ever', ua:'коли-небудь'},
-  {en:'rarely', ua:'рідко'},
-  {en:'too far from', ua:'занадто далеко від'},
-  {en:'healthy', ua:'здоровий'},
-  {en:'What kind of stuff', ua:'Що за речі'},
-  {en:'stir-fry', ua:'стір-фрай'},
-  {en:'so much easier', ua:'набагато легше'},
-  {en:'Actually', ua:'Насправді'},
-  {en:'Lucky you!', ua:'Щастливчик!'},
-  {en:'expensive', ua:'дорого'},
-  {en:'stream movies', ua:'дивитися фільми онлайн'},
-  {en:'slow', ua:'повільний'},
+  {en:'mine',            ua:'мій, моя, моє'},
+  {en:'Whose is it?',    ua:'Кому це належить?'},
+  {en:'Maybe',           ua:'Може бути'},
+  {en:'over there',      ua:'там / ось там'},
+  {en:'sure',            ua:'впевнений'},
+  {en:'her jacket',      ua:'її куртка'},
+  {en:'belongs to',      ua:'належить'},
+  {en:'their kids',      ua:'їхні діти'},
+  {en:'our space',       ua:'наш простір'},
+  {en:'not anymore',     ua:'більше ні / уже ні'},
+  {en:'Got it.',         ua:'Зрозумів.'},
+  {en:'Yours',           ua:'твій, твоя, твоє'},
+  {en:'in the back',     ua:'ззаду / в глибині'},
 ];
 
 const CONVS=[
   {
-    title:'Conversation 1 — Weekend Plans',
-    img:'A1-20-1-Adverbs-Frequency.jpg', audio:'A1-20-1-Adverbs-Frequency.mp3',
+    title:'Conversation 1 — Jacket',
+    img:'A1-17-1-Possessives-Jacket.jpg', audio:'A1-17-1-Possessives-Jacket.mp3',
     text:[
-      {role:'Man', line:'What do you do on the weekend?'},
-      {role:'Woman', line:'I usually stay home, but sometimes I go out.'},
-      {role:'Man', line:'Oh, where do you go?'},
-      {role:'Woman', line:'Sometimes I go to the beach. Sometimes, I go to the park.'},
-      {role:'Man', line:'I often go there, too. Do you ever go to the lake?'},
-      {role:'Woman', line:'No, very rarely. It is too far from my house.'},
+      {role:'Man',   line:'Is this your jacket?'},
+      {role:'Woman', line:"No, that's not mine."},
+      {role:'Man',   line:'Whose is it?'},
+      {role:'Woman', line:"Maybe it is Tom's jacket."},
+      {role:'Man',   line:'No, that is his jacket over there.'},
+      {role:'Woman', line:"I'm not sure then."},
+      {role:'Man',   line:"Is it Beth's jacket?"},
+      {role:'Woman', line:'No, it is too big to be her jacket.'},
+      {role:'Man',   line:'Well, it belongs to someone.'},
     ],
     questions:[
-      {q:'Which place does the woman sometimes go to?',
-       opts:['the beach','the library','the cinema','the gym'], ans:0},
-      {q:'How often does the woman go to the lake?',
-       opts:['Always','Sometimes','Rarely','Never'], ans:2},
-      {q:'What is too far from her house?',
-       opts:['the beach','the park','the lake','the office'], ans:2},
+      {q:'What does the woman say about the jacket?',
+       opts:['It is her jacket','It is not hers','It is too small','It belongs to her'], ans:1},
+      {q:"Whose jacket is over there according to the man?",
+       opts:["Tom's","Beth's",'Hers','The womans'], ans:0},
+      {q:'Why can it not be Beth\'s jacket?',
+       opts:['It is too small','It is too big to be her jacket','It belongs to someone','It is red'], ans:1},
     ]
   },
   {
-    title:'Conversation 2 — Dinner Choices',
-    img:'A1-20-2-Adverbs-Frequency.jpg', audio:'A1-20-2-Adverbs-Frequency.mp3',
+    title:'Conversation 2 — Car',
+    img:'A1-17-2-Possessives-Car.jpg', audio:'A1-17-2-Possessives-Car.mp3',
     text:[
-      {role:'Man', line:'What do you usually have for dinner?'},
-      {role:'Woman', line:'I try to eat healthy, so I usually cook vegetables.'},
-      {role:'Man', line:'Really? What kind of stuff do you make?'},
-      {role:'Woman', line:'Sometimes, I make soups. Sometimes, I make stir-fry.'},
-      {role:'Man', line:'Stir-fry! That\'s not very healthy.'},
-      {role:'Woman', line:'I know, but I don\'t eat it often.'},
+      {role:'Man',   line:'Whose car is this?'},
+      {role:'Woman', line:'That belongs to Joe and Sue.'},
+      {role:'Man',   line:'Wow! I like their car.'},
+      {role:'Woman', line:'I know. It is very nice.'},
+      {role:'Man',   line:"It's big too!"},
+      {role:'Woman', line:'Yes, they need space for their kids.'},
     ],
     questions:[
-      {q:'What does the woman usually cook?',
-       opts:['Meat','Vegetables','Pasta','Fish'], ans:1},
-      {q:'What food does she not eat often?',
-       opts:['Soups','Vegetables','Stir-fry','Salads'], ans:2},
-      {q:'Who says the food is not very healthy?',
-       opts:['The man','The woman','Both','Nobody'], ans:0},
+      {q:'Whose car is this?',
+       opts:["Joe and Sue's","The man's",'The womans','Someone else'], ans:0},
+      {q:'What does the man like about the car?',
+       opts:['It is not nice','Their car','The color','It is old'], ans:1},
+      {q:'Why do Joe and Sue need space?',
+       opts:['For their work','For their house','For their kids','For their money'], ans:2},
     ]
   },
   {
-    title:'Conversation 3 — Commute',
-    img:'A1-20-3-Adverbs-Frequency-Commute.jpg', audio:'A1-20-3-Adverbs-Frequency-Commute.mp3',
+    title:'Conversation 3 — Meeting',
+    img:'A1-17-3-Possessives-Meeting.jpg', audio:'A1-17-3-Possessives-Meeting.mp3',
     text:[
-      {role:'Woman', line:'Do you take the bus to work?'},
-      {role:'Man', line:'No, I never take the bus. I always drive.'},
-      {role:'Woman', line:'Yeah, it\'s so much easier to drive.'},
-      {role:'Man', line:'Do you drive to work?'},
-      {role:'Woman', line:'Actually, I rarely drive. I usually walk to work. I live near the office.'},
-      {role:'Man', line:'Lucky you!'},
+      {role:'Man',   line:'When is our meeting?'},
+      {role:'Woman', line:'It is not until 2.'},
+      {role:'Man',   line:'Are we in room 213?'},
+      {role:'Woman', line:'No, not anymore.'},
+      {role:'Man',   line:'OK, where is the meeting then?'},
+      {role:'Woman', line:'Our new room is 216.'},
+      {role:'Man',   line:'Got it.'},
     ],
     questions:[
-      {q:'How does the man go to work?',
-       opts:['By bus','By car','By bike','On foot'], ans:1},
-      {q:'What does the woman usually do?',
-       opts:['Drive','Take the bus','Walk','Fly'], ans:2},
-      {q:'Why does the woman usually walk?',
-       opts:['It is cheaper','It is faster','She lives near the office','She does not like cars'], ans:2},
+      {q:'When is the meeting?',
+       opts:['At 2','Until 2','After 2','Before 2'], ans:1},
+      {q:'Which room is their new meeting room?',
+       opts:['Room 213','Room 216','Room 312','Room 212'], ans:1},
+      {q:'What changed about their meeting?',
+       opts:['It moved','The room changed','They have a new room (216)','All of the above'], ans:3},
     ]
   },
   {
-    title:'Conversation 4 — Movies and Internet',
-    img:'A1-20-4-Adverbs-Frequency-Movie.jpg', audio:'A1-20-4-Adverbs-Frequency-Movie.mp3',
+    title:'Conversation 4 — Desk',
+    img:'A1-17-4-Possessives-Desk.jpg', audio:'A1-17-4-Possessives-Desk.mp3',
     text:[
-      {role:'Man', line:'Do you ever go to the movies?'},
-      {role:'Woman', line:'I rarely do. It is too expensive. Do you?'},
-      {role:'Man', line:'No, not often. I usually rent DVDs.'},
-      {role:'Woman', line:'Really? I never do that. I usually stream movies.'},
-      {role:'Man', line:'Nice. Do you have fast Internet?'},
-      {role:'Woman', line:'Yeah, usually it is fast, but sometimes it\'s slow.'},
+      {role:'Man',   line:'I like the new office. So, where is my desk?'},
+      {role:'Woman', line:'Yours is over there. It is next to mine.'},
+      {role:'Man',   line:"Nice. And where is Jill's desk?"},
+      {role:'Woman', line:'Hers is over there.'},
+      {role:'Man',   line:"Where is Bob's desk?"},
+      {role:'Woman', line:'He is in the back, by the window.'},
     ],
     questions:[
-      {q:'How often does the woman go to the movies?',
-       opts:['Never','Rarely','Often','Always'], ans:1},
-      {q:'What does the man usually do?',
-       opts:['Buy tickets','Rent DVDs','Stream movies','Go to the cinema'], ans:1},
-      {q:'What is sometimes slow?',
-       opts:['The bus','The food','The Internet','The movie'], ans:2},
+      {q:"Where is the man's desk?",
+       opts:['Next to hers','Over there next to the womans','In the back','In the front'], ans:1},
+      {q:"Where is Jill's desk?",
+       opts:['In the back','Next to his','Over there','In the office'], ans:2},
+      {q:"Where is Bob's desk?",
+       opts:['In the back, by the window','Next to the office','Over there','In the front'], ans:0},
     ]
   },
 ];
 
 const PUZZLES=[
   {
-    title:'Conversation 1 — Weekend Plans', audio:'A1-20-1-Adverbs-Frequency.mp3',
-    bank:['usually','sometimes','beach','park','often','ever','lake','rarely'],
+    title:'Conversation 1 — Jacket', audio:'A1-17-1-Possessives-Jacket.mp3',
+    bank:['your','mine','Whose','Maybe','his','sure','big','her'],
     lines:[
-      {pre:'Woman: I ',word:'usually',post:' stay home, but '},
-      {pre2:'',word2:'sometimes',post2:' I go out.'},
-      {pre:'Woman: ',word:'Sometimes',post:' I go to the '},
-      {pre2:'',word2:'beach',post2:'. Sometimes, I go to the '},
-      {pre3:'',word3:'park',post3:'.'},
-      {pre:'Man: I ',word:'often',post:' go there, too. Do you '},
-      {pre2:'',word2:'ever',post2:' go to the '},
-      {pre3:'',word3:'lake',post3:'?'},
-      {pre:'Woman: No, very ',word:'rarely',post:'. It is too far from my house.'},
+      {pre:'Man: Is this ',word:'your',post:' jacket?'},
+      {pre:'Woman: No, that\'s not ',word:'mine',post:'.'},
+      {pre:'Man: ',word:'Whose',post:' is it?'},
+      {pre:'Woman: ',word:'Maybe',post:' it is Tom\'s jacket.'},
+      {pre:'Man: No, that is ',word:'his',post:' jacket over there.'},
+      {pre:'Woman: I\'m not ',word:'sure',post:' then.'},
+      {pre:'Man: Is it Beth\'s jacket?'},
+      {pre:'Woman: No, it is too ',word:'big',post:' to be '},
+      {pre2:'',word2:'her',post2:' jacket.'},
     ]
   },
   {
-    title:'Conversation 2 — Dinner Choices', audio:'A1-20-2-Adverbs-Frequency.mp3',
-    bank:['usually','healthy','vegetables','Sometimes','soups','stir-fry','That\'s','often'],
+    title:'Conversation 2 — Car', audio:'A1-17-2-Possessives-Car.mp3',
+    bank:['Whose','That','their','It','It\'s','they','space','kids'],
     lines:[
-      {pre:'Man: What do you ',word:'usually',post:' have for dinner?'},
-      {pre:'Woman: I try to eat ',word:'healthy',post:', so I '},
-      {pre2:'',word2:'usually',post2:' cook '},
-      {pre3:'',word3:'vegetables',post3:'.'},
-      {pre:'Woman: ',word:'Sometimes',post:'. I make '},
-      {pre2:'',word2:'soups',post2:'. '},
-      {pre3:'',word3:'Sometimes',post3:', I make stir-fry.'},
-      {pre:'Man: Stir-fry! ',word:'That\'s',post:' not very healthy.'},
-      {pre:'Woman: I know, but I don\'t eat it ',word:'often',post:'.'},
+      {pre:'Man: ',word:'Whose',post:' car is this?'},
+      {pre:'Woman: ',word:'That',post:' belongs to Joe and Sue.'},
+      {pre:'Man: Wow! I like ',word:'their',post:' car.'},
+      {pre:'Woman: I know. ',word:'It',post:' is very nice.'},
+      {pre:'Man: ',word:'It\'s',post:' big too!'},
+      {pre:'Woman: Yes, ',word:'they',post:' need '},
+      {pre2:'',word2:'space',post2:' for their '},
+      {pre3:'',word3:'kids',post3:'.'},
     ]
   },
   {
-    title:'Conversation 3 — Commute', audio:'A1-20-3-Adverbs-Frequency-Commute.mp3',
-    bank:['never','always','drive','easier','Do','rarely','usually','walk','near'],
+    title:'Conversation 3 — Meeting', audio:'A1-17-3-Possessives-Meeting.mp3',
+    bank:['When','our','not','room','anymore','where','then','new'],
     lines:[
-      {pre:'Woman: Do you take the bus to work?'},
-      {pre:'Man: No, I ',word:'never',post:' take the bus. I '},
-      {pre2:'',word2:'always',post2:' drive.'},
-      {pre:'Woman: Yeah, it\'s so much ',word:'easier',post:' to drive.'},
-      {pre:'Man: ',word:'Do',post:' you drive to work?'},
-      {pre:'Woman: Actually, I ',word:'rarely',post:' drive. I '},
-      {pre2:'',word2:'usually',post2:' walk to work. I live '},
-      {pre3:'',word3:'near',post3:' the office.'},
+      {pre:'Man: ',word:'When',post:' is '},
+      {pre2:'',word2:'our',post2:' meeting?'},
+      {pre:'Woman: It is ',word:'not',post:' until 2.'},
+      {pre:'Man: Are we in ',word:'room',post:' 213?'},
+      {pre:'Woman: No, '},
+      {pre2:'',word2:'anymore',post2:'.'},
+      {pre:'Man: OK, ',word:'where',post:' is the meeting '},
+      {pre2:'',word2:'then',post2:'?'},
+      {pre:'Woman: Our ',word:'new',post:' room is 216.'},
     ]
   },
   {
-    title:'Conversation 4 — Movies and Internet', audio:'A1-20-4-Adverbs-Frequency-Movie.mp3',
-    bank:['rarely','movies','often','rent','usually','stream','never','fast','slow'],
+    title:'Conversation 4 — Desk', audio:'A1-17-4-Possessives-Desk.mp3',
+    bank:['office','where','Yours','there','mine','Hers','back','window'],
     lines:[
-      {pre:'Man: Do you ever go to the ',word:'movies',post:'?'},
-      {pre:'Woman: I ',word:'rarely',post:' do. It is too expensive. Do you?'},
-      {pre:'Man: No, not ',word:'often',post:'. I '},
-      {pre2:'',word2:'usually',post2:' rent DVDs.'},
-      {pre:'Woman: Really? I ',word:'never',post:' do that. I '},
-      {pre2:'',word2:'usually',post2:' stream '},
-      {pre3:'',word3:'movies',post3:'.'},
-      {pre:'Man: Nice. Do you have ',word:'fast',post:' Internet?'},
-      {pre:'Woman: Yeah, ',word:'usually',post:' it is fast, but sometimes it\'s '},
-      {pre2:'',word2:'slow',post2:'.'},
+      {pre:'Man: I like the new ',word:'office',post:'. So, '},
+      {pre2:'',word2:'where',post2:' is my desk?'},
+      {pre:'Woman: ',word:'Yours',post:' is over '},
+      {pre2:'',word2:'there',post2:'. It is next to '},
+      {pre3:'',word3:'mine',post3:'.'},
+      {pre:'Man: Nice. And where is Jill\'s desk?'},
+      {pre:'Woman: ',word:'Hers',post:' is over there.'},
+      {pre:'Man: Where is Bob\'s desk?'},
+      {pre:'Woman: He is in the ',word:'back',post:' by the '},
+      {pre2:'',word2:'window',post2:'.'},
     ]
   },
 ];
 
 const FLASHCARDS=[
-  {en:"I usually stay home, but sometimes I go out.", ua:"Я зазвичай залишаюся вдома, але іноді я виходжу кудись."},
-  {en:"Sometimes I go to the beach. Sometimes, I go to the park.", ua:"Іноді я йду на пляж. Іноді я йду в парк."},
-  {en:"I often go there, too.", ua:"Я теж часто туди ходжу."},
-  {en:"No, very rarely. It is too far from my house.", ua:"Ні, дуже рідко. Це занадто далеко від мого дому."},
-  {en:"I try to eat healthy, so I usually cook vegetables.", ua:"Я намагаюся їсти здорову їжу, тому зазвичай готую овочі."},
-  {en:"Sometimes, I make soups. Sometimes, I make stir-fry.", ua:"Іноді я готую супи. Іноді я готую страва зі смажених овочів."},
-  {en:"That's not very healthy.", ua:"Це не дуже здорово."},
-  {en:"I don't eat it often.", ua:"Я не їм це часто."},
-  {en:"No, I never take the bus. I always drive.", ua:"Ні, я ніколи не їжджу автобусом. Я завжди їду машиною."},
-  {en:"Actually, I rarely drive. I usually walk to work.", ua:"Насправді я рідко їжджу машиною. Я зазвичай йду на роботу пішки."},
-  {en:"I rarely do. It is too expensive.", ua:"Я рідко це роблю. Це занадто дорого."},
-  {en:"I usually rent DVDs.", ua:"Я зазвичай беру DVD напрокат."},
-  {en:"I usually stream movies.", ua:"Я зазвичай дивлюся фільми онлайн."},
-  {en:"Usually it is fast, but sometimes it's slow.", ua:"Зазвичай він швидкий, але іноді повільний."},
+  {en:"Is this your jacket?",                     ua:"Це твоя куртка?"},
+  {en:"No, that's not mine.",                     ua:"Ні, це не моя."},
+  {en:"Whose is it?",                             ua:"Кому це належить?"},
+  {en:"Maybe it is Tom's jacket.",                ua:"Може, це куртка Тома."},
+  {en:"That is his jacket over there.",           ua:"Ось там його куртка."},
+  {en:"No, it is too big to be her jacket.",      ua:"Ні, вона за велика для її куртки."},
+  {en:"Whose car is this?",                       ua:"Чия це машина?"},
+  {en:"That belongs to Joe and Sue.",             ua:"Це належить Джо та Сью."},
+  {en:"I like their car.",                        ua:"Мені подобається їхня машина."},
+  {en:"Yes, they need space for their kids.",     ua:"Так, їм потрібен простір для їхніх дітей."},
+  {en:"When is our meeting?",                     ua:"Коли наша зустріч?"},
+  {en:"It is not until 2.",                       ua:"Це не раніше за 2 години."},
+  {en:"Our new room is 216.",                     ua:"Наша нова кімната — 216."},
+  {en:"Yours is over there.",                     ua:"Твій / твоя / твоє там."},
+  {en:"It is next to mine.",                      ua:"Це поруч з моїм / моєю / моїм."},
+  {en:"Hers is over there.",                      ua:"Її там."},
+  {en:"He is in the back, by the window.",        ua:"Він ззаду, біля вікна."},
 ];
 
 const SPEAKING=[
   {
     title:'Діалог 1 з 4', interview:false,
     lines:[
-      {role:'Студент А', text:'Що ти зазвичай робиш у вихідні?'},
-      {role:'Студент Б', text:'Я зазвичай залишаюся вдома, але іноді я йду на прогулянку.'},
-      {role:'Студент А', text:'О, куди ти зазвичай ходиш?'},
-      {role:'Студент Б', text:'Іноді я їду на пляж, а іноді я йду в парк.'},
-      {role:'Студент А', text:'Я теж часто ходжу в парк.'},
-      {role:'Студент Б', text:'Чи ти коли-небудь їдеш на озеро?'},
-      {role:'Студент А', text:'Ні, дуже рідко. Це надто далеко.'},
-      {role:'Студент Б', text:'Я розумію. Це нормально!'},
+      {role:'Студент А', text:'Чия це куртка? Твоя?'},
+      {role:'Студент Б', text:'Ні, це не моя. Це його куртка.'},
+      {role:'Студент А', text:'А це? Чия сумка?'},
+      {role:'Студент Б', text:'Це їхня сумка. Належить Томові та Беті.'},
+      {role:'Студент А', text:'Твій рюкзак там, в куті?'},
+      {role:'Студент Б', text:'Ні, мій рюкзак тут. Той — не мій. Это його рюкзак.'},
+      {role:'Студент А', text:'Чий зошит?'},
+      {role:'Студент Б', text:'Це її зошит. Вона забула його.'},
     ]
   },
   {
     title:'Діалог 2 з 4', interview:false,
     lines:[
-      {role:'Студент А', text:'Що ти зазвичай їси на вечерю?'},
-      {role:'Студент Б', text:'Я зазвичай готую овочі, щоб їсти здорову їжу.'},
-      {role:'Студент А', text:'Справді? А що ти іноді готуєш?'},
-      {role:'Студент Б', text:'Іноді я готую супи. Іноді я готую стір-фрай.'},
-      {role:'Студент А', text:'Стір-фрай? Це не дуже здорово.'},
-      {role:'Студент Б', text:'Я знаю, але я не їм це часто.'},
-      {role:'Студент А', text:'Це добре. Здорове харчування важливе.'},
-      {role:'Студент Б', text:'Так, я намагаюся.'},
+      {role:'Студент А', text:'Де мої речі? Я не можу їх знайти!'},
+      {role:'Студент Б', text:'Твоя сумка там, на столі. А твої книги там, на полиці.'},
+      {role:'Студент А', text:'Спасибі. А це — чиїже? Чий ноутбук?'},
+      {role:'Студент Б', text:'Це його. Його ноутбук. Він забув його тут.'},
+      {role:'Студент А', text:'Ого! А наші речі? Наш проект?'},
+      {role:'Студент Б', text:'Наш проект у папці. Тут, на столі. Всі наші матеріали там.'},
+      {role:'Студент А', text:'Чудово! А їхні матеріали? Де їхні папки?'},
+      {role:'Студент Б', text:'Їхні папки там, в іншому файлі. Вони там.'},
     ]
   },
   {
     title:'Діалог 3 з 4', interview:true,
     note:'🎤 Студент А перекладає запитання англійською → Студент Б відповідає про себе',
     lines:[
-      {role:'Студент А', text:'Ти коли-небудь їдеш автобусом на роботу?'},
+      {role:'Студент А', text:'Це твоя книга? Чия твоя улюблена книга?'},
       {role:'Студент Б', blank:true},
-      {role:'Студент А', text:'Як часто ти їдеш машиною?'},
+      {role:'Студент А', text:'Чий твій улюблений фільм? Чия актриса?'},
       {role:'Студент Б', blank:true},
-      {role:'Студент А', text:'Чи ти зазвичай йдеш пішки на роботу?'},
+      {role:'Студент А', text:'Де твої речи? Де твій рюкзак сьогодні?'},
       {role:'Студент Б', blank:true},
-      {role:'Студент А', text:'Чи тобі легко добиратися до офісу?'},
+      {role:'Студент А', text:'Чия це комната? Твоя чи його?'},
       {role:'Студент Б', blank:true},
-      {role:'Студент А', text:'Як ти почуваєшся, коли не їдеш на роботу?'},
+      {role:'Студент А', text:'Чиї це ручки? Твої чи мої?'},
       {role:'Студент Б', blank:true},
     ]
   },
@@ -391,15 +396,15 @@ const SPEAKING=[
     title:'Діалог 4 з 4', interview:true,
     note:'🎤 Студент А перекладає запитання англійською → Студент Б відповідає про себе',
     lines:[
-      {role:'Студент А', text:'Ти часто ходиш у кіно?'},
+      {role:'Студент А', text:'Хто твій найкращий друг? Як його / її звуть?'},
       {role:'Студент Б', blank:true},
-      {role:'Студент А', text:'Ти іноді орендуєш DVD?'},
+      {role:'Студент А', text:'Чиї мобільні телефони найновіші? Твій чи його?'},
       {role:'Студент Б', blank:true},
-      {role:'Студент А', text:'Ти зазвичай дивишся фільми онлайн?'},
+      {role:'Студент А', text:'Де твоя сім\'я? Де ваш дім?'},
       {role:'Студент Б', blank:true},
-      {role:'Студент А', text:'Чи твій інтернет часто повільний?'},
+      {role:'Студент А', text:'Чиї батьки працюють в офісі?'},
       {role:'Студент Б', blank:true},
-      {role:'Студент А', text:'Який твій улюблений спосіб дивитися фільми?'},
+      {role:'Студент А', text:'Чиї речи лежать там, на столі? Твої чи його?'},
       {role:'Студент Б', blank:true},
     ]
   },
@@ -432,8 +437,9 @@ function speakNext(){
   speechSynthesis.cancel();speechSynthesis.speak(u);
 }
 function makeSel(word,pi,bank){
+  const shuffled=[...bank].sort(()=>Math.random()-0.5);
   let o='<option value="">—</option>';
-  bank.forEach(w=>{o+='<option value="'+w+'">'+w+'</option>';});
+  shuffled.forEach(w=>{o+='<option value="'+w+'">'+w+'</option>';});
   return '<select class="pzl-sel" data-ans="'+word+'" data-pi="'+pi+'">'+o+'</select>';
 }
 function updateFab(){
@@ -466,12 +472,12 @@ function buildPanels(){
     <div class="sec-title">🎬 Watch</div>
     <div class="sec-sub">Подивись відео — просто слухай і дивись, не хвилюйся якщо не все зрозуміло.</div>
     <div class="card">
-      <div class="vimeo-wrap"><iframe src="https://player.vimeo.com/video/332887530" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="vimeo-wrap"><iframe src="https://player.vimeo.com/video/950580865" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
       <ul class="conv-list">
-        <li>🌿 Conversation 1 — Weekend Plans</li>
-        <li>📖 Conversation 2 — Dinner Choices</li>
-        <li>🏫 Conversation 3 — Commute</li>
-        <li>⚽ Conversation 4 — Movies and Internet</li>
+        <li>👕 Conversation 1 — Jacket</li>
+        <li>🚗 Conversation 2 — Car</li>
+        <li>📅 Conversation 3 — Meeting</li>
+        <li>🪑 Conversation 4 — Desk</li>
       </ul>
     </div>
     <div class="nav-row"><div></div><button class="nav-btn next" onclick="goStep(1)">Далі →</button></div>`;
@@ -709,7 +715,7 @@ function openResults(){
   const pct=t>0?Math.round(g/t*100):0;
   const medal=pct>=90?'🏆':pct>=70?'🌟':pct>=50?'👍':'💪';
   document.getElementById('resultsTotal').textContent=medal+' '+g+'/'+t+' — '+pct+'%';
-  let txt='A1-20 Adverbs of Frequency\n'+'─'.repeat(28)+'\n';
+  let txt='A1-17 Possessive Pronouns\n'+'─'.repeat(28)+'\n';
   for(let i=1;i<=4;i++){const s=quizScores['q'+i];txt+='Quiz '+i+': '+(s?s.got+'/'+s.total:'—')+'\n';}
   for(let i=1;i<=4;i++){const s=puzzleScores['p'+i];txt+='Puzzle '+i+': '+(s?s.got+'/'+s.total:'—')+'\n';}
   txt+='─'.repeat(28)+'\nЗагалом: '+g+'/'+t+' ('+pct+'%) '+medal;
